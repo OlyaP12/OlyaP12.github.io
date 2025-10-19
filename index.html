@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olga Firsova — CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="mode-toggle" class="mode-btn">🌙 Dark Mode</button>
+    <div class="resume">
+        <header class="header">
+            <img src="photo.webp" class="profile-photo">
+            <h1>Olga Firsova</h1>
+            <p class="title">Data Scientist</p>
+
+            <div class="contact-cards">
+                <div class="card">
+                    <span>✉️</span>
+                    <a href="mailto:olyaaa.per@mail.ru">olyaaa.per@mail.ru</a>
+                </div>
+                <div class="card">
+                    <span>🐱</span>
+                    <a href="https://github.com/OlyaP12" target="_blank">GitHub</a>
+                </div>
+                <div class="card">
+                    <span>📍</span>
+                    Saint Petersburg, Russia
+                </div>
+            </div>
+
+            <nav class="menu hidden">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#qualities">Qualities</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <button id="expand-btn">Show full CV ↓</button>
+
+        <main class="main hidden">
+
+            <section class="about" id="about">
+                <h2>About</h2>
+                <p>
+                    Studied linguistics during Bachelor's degree, gaining a solid foundation in language structure and analysis. 
+                    Exposure to machine learning and natural language processing sparked interest in applying computational methods to linguistic data. 
+                    Enthusiastic about combining linguistics with ML and NLP to address real-world challenges
+                </p>
+            </section>
+
+            <section class="education" id="education">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="event">
+                        <span class="year">2021–2025</span>
+                        <div class="details">
+                            <h3>Bachelor’s in Fundamental & Applied Linguistics</h3>
+                            <p>Specialization: Computational Linguistics</p>
+                            <em>HSE, Nizhny Novgorod Campus</em>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <span class="year">2025–2027</span>
+                        <div class="details">
+                            <h3>Master’s in Machine Learning & Data Analysis</h3>
+                            <em>HSE, St. Petersburg Campus</em>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience" id="experience">
+                <h2>Experience</h2>
+                <div class="timeline">
+
+                    <div class="event-card">
+                        <div class="event-summary">
+                            <span class="year">May – July 2024</span>
+                            <h3>Internship: Data Science — IT Academy Lad</h3>
+                            <button class="toggle-details">+</button>
+                        </div>
+                        <div class="event-details">
+                            <p>
+                                During the internship, IT job postings were collected from HeadHunter and Habr via BeautifulSoup. 
+                                A model was trained to predict salary ranges for each specialty, considering factors such as city, required skills, and other relevant features. 
+                                Then salary range visualizations were created using Apache Superset and SQL
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-summary">
+                            <span class="year">September 2024</span>
+                            <h3>Hackathon Participant — HSE & Promsvyazbank</h3>
+                            <button class="toggle-details">+</button>
+                        </div>
+                        <div class="event-details">
+                            <p>
+                                Analyzed hotel booking data, including payments, reservations, and cancellations, to identify hidden patterns related to check-in dates, payment methods, and other factors. 
+                                Explored insights to inform the development of a new banking product aimed at helping students organize their trips
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="projects" id="projects">
+                <h2>Projects</h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <h3>
+                            <a href="https://github.com/OlyaP12/2024-hello-llm" target="_blank">
+                                Educational project on Supervised Fine-Tuning (SFT)
+                            </a>
+                        </h3>
+                        <p class="project-description">
+                            Implemented fine-tuning of a large language model using LoRA (Low-Rank Adaptation) within the PEFT framework. 
+                            Selected a new task and dataset, tokenized and prepared data via PyTorch Dataset abstraction, 
+                            trained the model efficiently, and deployed it as a FastAPI service for inference and evaluation
+                        </p>
+                        <div class="project-tools">
+                            <span>Python</span>
+                            <span>Transformers (Hugging Face)</span>
+                            <span>PEFT / LoRA</span>
+                            <span>PyTorch</span>
+                            <span>FastAPI</span>
+                            <span>Pandas</span>
+                            <span>Trainer API</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>
+                            <a href="https://github.com/OlyaP12/django-project" target="_blank">Django Website</a>
+                        </h3>
+                        <p class="project-description">
+                            Developed a multi-page website based on Django with dynamic content
+                        </p>
+                        <div class="project-tools">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>HTML & CSS</span>
+                            <span>JavaScript</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+                <h2>Professional Skills</h2>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>HTML & CSS</span>
+                    <span>PostgreSQL</span>
+                    <span>SQLite</span>
+                    <span>Database Management</span>
+                    <span>Data Analysis</span>
+                    <span>Figma</span>
+                    <span>Collab Notebook</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Matplotlib</span>
+                    <span>Seaborn</span>
+                    <span>Plotly</span>
+                    <span>SciPy</span>
+                    <span>Apache Superset</span>
+                    <span>BeautifulSoup</span>
+                    <span>Selenium</span>
+                    <span>scikit-learn</span>
+                    <span>PyTorch</span>
+                    <span>TensorFlow</span>
+                    <span>Keras</span>
+                    <span>NLTK</span>
+                    <span>spaCy</span>
+                    <span>Transformers (Hugging Face)</span>
+                    <span>Gensim</span>
+                    <span>Django Framework</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                </div>
+            </section>
+
+            <section class="languages" id="languages">
+                <h2>Languages</h2>
+                <div class="lang-bar">
+                    <span>Russian</span>
+                    <div class="bar"><div class="fill full"></div></div>
+                </div>
+                <div class="lang-bar">
+                    <span>English</span>
+                    <div class="bar"><div class="fill eighty"></div></div>
+                </div>
+                <div class="lang-bar">
+                    <span>German</span>
+                    <div class="bar"><div class="fill forty"></div></div>
+                </div>
+                <div class="lang-bar">
+                    <span>French</span>
+                    <div class="bar"><div class="fill twenty"></div></div>
+                </div>
+            </section>
+
+            <section class="certificates" id="certificates">
+                <h2>Certificates</h2>
+                <p><strong>2015</strong> — English Language Course, AM Language Studio, Malta, Sliema</p>
+            </section>
+
+            <section class="qualities" id="qualities">
+                <h2>Personal Qualities</h2>
+                <p>
+                    Analytical and detail-oriented, with a strong research mindset and ability to learn quickly. 
+                    Skilled in communication and collaboration. Driven by curiosity and a desire to apply knowledge in practice
+                </p>
+            </section>
+
+        </main>
+
+    </div>
+
+    <button id="back-to-top">⬆️ Top</button>
+    <script src="script.js"></script>
+</body>
+</html>
