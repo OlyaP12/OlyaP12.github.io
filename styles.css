@@ -617,3 +617,14 @@ body.dark-mode .event-summary .year {
 body.dark-mode .header .title {
     color: #E0E0E0;
 }
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .project-card {
+        width: 100%; 
+    }
+}
